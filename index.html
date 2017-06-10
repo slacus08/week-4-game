@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Collector!</title>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- first container - header -->
+<div class="container">
+
+	<div class="jumbotron">
+		<h1 class="text-center"> Peanut Gang Friend Collector! </h1>
+		<br>
+		<h3> Patty is stealing all of your friends, come on get them!</h3>
+	</div>
+</div>
+
+<br>
+
+<!-- Win/Loss counter -->
+<div class="container">
+	<div class="winloss">
+		<h2>Wins: <span class="winsCounter">0 - </span> Losses: <span class="lossesCounter">0</span></h2>
+	</div>
+</div>
+
+<!-- Instructions -->
+<div id="instructions" class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4 instructions">
+			<p>You will be given a random number at the start of the game.</p>
+			<br>
+			<p>There are four Peanuts Gang friends below. By clicking on each peanut friend you will add a specific amount of points to your total score.</p>
+			<br>
+			<p>You win the game by matching your total score to random number provided, you lose the game if your total score goes above the random number.</p>
+			<br>
+			<p>The value of each peanut is hidden from you until you click on it.</p>
+			<br>
+			<p>Each time when the game starts, the game will change the values of each peanut.</p>
+</div>
+
+ 
+<div id="game" class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-6 game">
+			<img class="peanutOne" src="assets/images/cb.jpg">
+			<img class="peanutTwo" src="assets/images/snoopy.jpg">	
+			<img class="peanutThree" src="assets/images/lucy.jpg">	
+			<img class="peanutFour" src="assets/images/linus.jpg">
+				<br>
+				<p>Patty's Score: <span class="computerScore">0</span></p>
+				<br>
+				<p>Player Score: <span class="playerScore">0</span></p>
+				<br>
+				<p>Charlie Brown: <span id="peanutOneValue">?</span></p>
+				<br>
+				<p>Snoopy: <span id="peanutTwoValue">?</span></p>
+				<br>
+				<p>Lucy: <span id="peanutThreeValue">?</span></p>
+				<br>
+				<p>Linus: <span id="peanutFourValue">?</span></p>	
+		</div>
+	</div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js">
+				$(document).ready(function() {
+				startGame();
+			});
+</script>
+
+
+
+</html>

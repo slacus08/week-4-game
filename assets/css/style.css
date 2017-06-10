@@ -1,0 +1,36 @@
+body {
+	font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+	font-size: x-large;
+}
+
+.winloss {
+	height:100px;
+}
+
+.instructions {
+	border:1px solid blue;
+	margin-left: 40px;
+	padding: 20px;
+	width:30%;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+.jumbotron {
+	height:275px;
+	background-image: url("../images/background.png");
+	color: white;
+	text-align: center;
+	color:black;
+	font-weight: bold;
+}
+
+.game {
+	margin-left: 40px;
+}
